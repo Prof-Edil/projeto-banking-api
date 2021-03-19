@@ -4,7 +4,7 @@ Uma API end-to-end para gerenciar transações monetárias.
 
 
 **Participantes:**
-- 17/<preencher>: Breno Fatureto
+- 17/0007014: Breno Fatureto
 - 17/0009840: Felipe Paradas
 
 ## Features
