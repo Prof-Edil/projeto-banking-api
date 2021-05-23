@@ -4,24 +4,22 @@ Uma API end-to-end para gerenciar transações monetárias.
 
 
 **Participantes:**
+
 - 17/0007014: Breno Fatureto
 - 17/0009840: Felipe Paradas
 
 ## Features
 
-- Criação de conta
-- Criação de usuário
-- Pagamento
+- Criação de usuário e conta
+- Saque
 - Depósito
-- Cálculo de júros
 - Tranferência entre contas
-- Rollback nativo
+- Front-end escrito em Rescript
 
 ## Pacotes
 
 - [Servant](https://hackage.haskell.org/package/servant): Para criação das rotas da API
-- [Aeson](https://hackage.haskell.org/package/aeson): Para tratar objetos
-- [QuickCheck](https://hackage.haskell.org/package/QuickCheck): Para realizar testes
-- [Lens](https://hackage.haskell.org/package/lens): Para facilitar acesso de objetos
+- [Persistent](https://hackage.haskell.org/package/persistent): Para interface com banco de dados
+- [Aeson](https://hackage.haskell.org/package/aeson): Para leitura e escrita de dados em JSON
 
 
