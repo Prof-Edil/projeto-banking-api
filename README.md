@@ -22,4 +22,8 @@ Uma API end-to-end para gerenciar transações monetárias.
 - [Persistent](https://hackage.haskell.org/package/persistent): Para interface com banco de dados
 - [Aeson](https://hackage.haskell.org/package/aeson): Para leitura e escrita de dados em JSON
 
+## Referências
 
+- https://docs.servant.dev/en/stable/
+- https://www.yesodweb.com/book/persistent
+- https://mmhaskell.com/real-world/databases
