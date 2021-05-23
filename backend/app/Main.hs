@@ -1,6 +1,8 @@
 module Main where
 
-import Lib
+import API (startApp)
+import DB (migrateDB)
 
 main :: IO ()
-main = someFunc
+main = migrateDB >> startApp
+

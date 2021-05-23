@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 402f09c3e5c759de7027c763255a6de0cd46075bb87509eddf027551c9679f7e
+-- hash: 1d4c1170584c9e967f465e7ed8b8bb674402413270ce1c79f0467e0416b9aa79
 
 name:           backend
 version:        0.1.0.0
@@ -27,13 +27,31 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      API
+      DB
+      Deposit
+      Operation
+      Transfer
+      User
+      Utils
+      Withdrawal
   other-modules:
       Paths_backend
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , monad-logger
+    , mtl
+    , persistent
+    , persistent-postgresql
+    , persistent-template
+    , servant-server
+    , text
+    , wai
+    , warp
   default-language: Haskell2010
 
 executable backend-exe
@@ -44,8 +62,19 @@ executable backend-exe
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      backend
+      aeson
+    , backend
     , base >=4.7 && <5
+    , bytestring
+    , monad-logger
+    , mtl
+    , persistent
+    , persistent-postgresql
+    , persistent-template
+    , servant-server
+    , text
+    , wai
+    , warp
   default-language: Haskell2010
 
 test-suite backend-test
@@ -57,6 +86,17 @@ test-suite backend-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      backend
+      aeson
+    , backend
     , base >=4.7 && <5
+    , bytestring
+    , monad-logger
+    , mtl
+    , persistent
+    , persistent-postgresql
+    , persistent-template
+    , servant-server
+    , text
+    , wai
+    , warp
   default-language: Haskell2010
