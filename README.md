@@ -2,6 +2,7 @@
 
 Uma API end-to-end para gerenciar transações monetárias.
 
+O vídeo pode ser acessado através do link: [https://youtu.be/pegIDkl6AjA](https://youtu.be/pegIDkl6AjA)
 
 **Participantes:**
 
